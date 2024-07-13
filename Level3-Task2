@@ -1,0 +1,129 @@
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship at Cognifyz Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+    </header>
+    <section class="introduction">
+        <h2>Overview</h2>
+        <p>The Web Developer Internship at Cognifyz Technologies offers a 12-week immersive program designed to provide hands-on experience in the latest web development technologies. Interns will work alongside seasoned professionals on real-world projects, gaining practical skills in HTML, CSS, JavaScript, and modern frameworks like React or Angular. The program emphasizes mentorship, enabling interns to learn from experienced developers and enhance their coding abilities. This internship is an excellent opportunity to build a strong foundation in web development, preparing participants for a successful career in the tech industry. Join us to kickstart your journey in web development!.</p>
+    </section>
+    <section class="highlights">
+        <h2>Highlights</h2>
+        <ul>
+            <li>Work on active web development projects</li>
+            <li>Receive mentorship from experienced professionals</li>
+            <li>Expand your technical skills in a real-world setting</li>
+            <li>Collaborate with a diverse team</li>
+            <li>Build a professional portfolio</li>
+        </ul>
+    </section>
+    <section class="qualifications">
+        <h2>Desired Skills and Technologies</h2>
+        <ul>
+            <li>Proficiency in HTML, CSS, and JavaScript</li>
+            <li>Experience with front-end frameworks like React or Angular</li>
+            <li>Understanding of responsive design principles</li>
+            <li>Strong problem-solving skills and attention to detail</li>
+            <li>Excellent communication and teamwork abilities</li>
+        </ul>
+    </section>
+    <section1 class="cta">
+        <button onclick="window.location.href='apply.html'">Apply Now</button>
+        <button onclick="window.location.href='learn_more.html'">Learn More</button>
+    </section1>
+    <footer>
+        <h2>Contact us</h1>
+            <p>Address: Nagpur, Maharashtra</p>
+        <p>Email: <a href="mailto:internships@cognifyz.com  ">internships@cognifyz.com</a> for any inquiries.</p>
+    </footer>
+</body>
+</html>
+
+CSS:
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-image: linear-gradient(50deg,rgb(8, 2, 46),rgb(10, 194, 197),rgb(8, 2, 46));
+    color: white;
+    padding: 50px ;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px 100px;
+    margin: 20px 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.highlights ul, .qualifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights ul li, .qualifications ul li {
+    background-color: #e4e4e4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cta {
+    padding: 10px 600px;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.cta button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.cta button:hover {
+    background-color: #ba0909;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: -10px;
+    width: 100%;
+}
