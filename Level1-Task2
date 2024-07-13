@@ -1,0 +1,61 @@
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+    <h1>JavaScript Tasks</h1>
+    
+    <!-- Task 1: Button Color Change  -->
+    <button id="colorButton" onclick="changeColor()">Click Me !</button>
+
+    <!-- Task 2: Greeting Message  -->
+    <script>
+        function displayGreeting() {
+            const now = new Date();
+            const hour = now.getHours();
+            let greeting;
+
+            if (hour < 12) {
+                greeting = 'Good Morning!';
+            } else if (hour < 18) {
+                greeting = 'Good Afternoon!';
+            } else {
+                greeting = 'Good Evening!';
+            }
+
+            alert(greeting);
+        }
+
+        window.onload = displayGreeting;
+    </script>
+    
+    <!-- Task 3: Basic Calculator -->
+    <div>
+        <h2>Basic Calculator</h2>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <button onclick="addNumbers()">Add</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function changeColor() {
+            const button = document.getElementById('colorButton');
+            const currentColor = button.style.backgroundColor;
+            button.style.backgroundColor = currentColor === 'blue' ? 'red' : 'blue';
+        }
+
+        function addNumbers() {
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+            const result = num1 + num2;
+
+            document.getElementById('result').textContent = 'Result: ' + result;
+        }
+    </script>
+</body>
+</html>
